@@ -16,6 +16,8 @@ public class EmployeeWeges {
         int eHrs = 0;
         int totalEmpWages = 0;
 
+        System.out.println("Employee Wages as Per Working Day in Month");
+
         for (int i = 1; i <= WORK_DAY_MONTH; i++) {
 
             double eCheck = Math.floor(Math.random() * 10) % 3; //0.0 -1.0
@@ -37,8 +39,8 @@ public class EmployeeWeges {
             }
             eWage = WAGE_PER_HOUR * eHrs;
             totalEmpWages= eWage+totalEmpWages;
-            System.out.println("Employee Wages Details :- " + eWage);
+            System.out.println("Employee Wages Details :- " + eWage);//Wedges as per Hours
         }
-        System.out.println("Total Employee Wages"+totalEmpWages);
+        System.out.println("Total Employee Wages"+totalEmpWages);//this will display total Wedges in Month;
     }
 }
